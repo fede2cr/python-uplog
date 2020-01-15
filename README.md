@@ -12,12 +12,16 @@ sudo pip3 install scapy
 Now, you can run (recommended under ``screen`` or similar application):
 
 ```bash
+git clone https://github.com/fede2cr/python-uplog.git
+cd python-uplog
 sudo python3 uplog.py www.greencore.co.cr 2>&1 >/dev/null
 ```
 
-Now, you'll have a new file called ``uplog.txt`` which should look like this:
+Now, you'll have a new file called ``uplog.txt`` which you can read in realtime by using the tool ``tail -f``, and should look like this:
 
 ```
+tail -f uplog.txt
+
 [18:30:00]|[......................................................]
 [18:31:00]|[......................................................]
 [18:32:00]|[......................................................]
