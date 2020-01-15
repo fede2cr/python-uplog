@@ -11,7 +11,7 @@ try:
         secs = time.localtime()
         if cur_min != secs.tm_min:
             cur_min = secs.tm_min
-            f.write("]\n["+str(secs.tm_hour)+":"+str(secs.tm_min)+":"+str(f"{secs.tm_sec:02d}")+"]|[")
+            f.write("]\n["+str(f"{secs.tm_hour:02d}")+":"+str(f"{secs.tm_min:02d}")+":"+str(f"{secs.tm_sec:02d}")+"]|[")
     
         if resp == None:
             f.write("-")
